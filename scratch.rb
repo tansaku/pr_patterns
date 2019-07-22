@@ -1,3 +1,5 @@
+# for use with http://bl.ocks.org/jose187/4733747
+
 require 'octokit'
 
 client = Octokit::Client.new(:login => ENV['GITHUB_USERNAME'], :password => ENV['GITHUB_PASSWORD'])
