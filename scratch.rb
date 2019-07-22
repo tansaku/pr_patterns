@@ -10,7 +10,7 @@ review_stats = prs.map do |pr|
   reviewers = reviews.map{|r| r.user.login}
   codeclimate_count = reviewers.count("codeclimate[bot]")
   human_reviewers = reviewers.select{|r| r != "codeclimate[bot]"}
-  [pr.created_at, "https://github.com/tusker-direct/hobgoblin/pull/#{pr.number}", pr.user.login, codeclimate_count, human_reviewers].flatten
+  [pr.created_at, "https://github.com/#{ENV['GITHUB_REPO_TO_REVIEW']}/pull/#{pr.number}", pr.user.login, codeclimate_count, human_reviewers].flatten
 end
 
 nodes = []
