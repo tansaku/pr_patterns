@@ -1,3 +1,5 @@
+require 'octokit'
+
 client = Octokit::Client.new(:login => ENV['GITHUB_USERNAME'], :password => ENV['GITHUB_PASSWORD'])
 
 # ENV['GITHUB_REPO_TO_REVIEW'] e.g. 'tansaku/pr_patterns'
