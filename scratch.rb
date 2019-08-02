@@ -1,4 +1,8 @@
-# for use with http://bl.ocks.org/jose187/4733747
+# for use with http://bl.ocks.org/jose187/4733747 - see index.html
+# serve with `ruby -run -e httpd . -p 9090`
+
+# working with https://bl.ocks.org/mbostock/533daf20348023dfdd76 would be easier
+# but picture not as pretty
 
 require 'octokit'
 
