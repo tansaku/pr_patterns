@@ -52,3 +52,4 @@ build-iPhoneSimulator/
 # project specific
 graphFile2.json
 pr_reviews_closed*
+.env

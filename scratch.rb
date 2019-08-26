@@ -4,6 +4,9 @@
 # working with https://bl.ocks.org/mbostock/533daf20348023dfdd76 would be easier
 # but picture not as pretty
 
+require 'dotenv'
+Dotenv.load
+
 require 'octokit'
 
 client = Octokit::Client.new(:login => ENV['GITHUB_USERNAME'], :password => ENV['GITHUB_PASSWORD'])
