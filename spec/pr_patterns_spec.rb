@@ -18,7 +18,7 @@ describe PRPatterns do
   let(:user) { double :user, login: 'dependabot-preview[bot]' }
 
   let(:output_klass) { spy File }
-  let(:csv) { "2019-08-06 05:17:58 UTC,https://github.com//pull/1154,dependabot-preview[bot],0\n" }
+  let(:csv) { "2019-08-06 05:17:58 UTC,https://github.com/AgileVentures/LocalSupport/pull/1154,dependabot-preview[bot],0\n" }
   let(:json) { '{"nodes":[{"name":"dependabot-preview[bot]"},{"name":null}],"links":[]}' }
 
   it '#to_csv' do

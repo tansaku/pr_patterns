@@ -1,17 +1,19 @@
 # frozen_string_literal: true
 
+require 'dotenv'
+Dotenv.load
+
 require 'octokit'
 require 'csv'
 require 'json'
 
 class PRPatterns
-
-  def self.run(client, prs)
-    instance = self.new(client, prs)
+  def self.run(client = default_client, prs = nil)
+    instance = new(client, prs)
     instance.to_csv
     instance.to_json
   end
-  
+
   def initialize(client = default_client, prs = nil)
     @client = client
     @prs = prs || default_prs
@@ -65,7 +67,7 @@ class PRPatterns
 
   attr_reader :client, :prs
 
-  def default_client
+  def self.default_client
     Octokit::Client.new(login: ENV['GITHUB_USERNAME'], password: ENV['GITHUB_PASSWORD'])
   end
 

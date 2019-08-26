@@ -7,7 +7,7 @@ Check out `.env.sample` to see the env vars you need to set to grab some PR revi
 * GITHUB_PASSWORD --> see https://github.com/settings/tokens
 * GITHUB_REPO_TO_REVIEW --> e.g. AgileVentures/LocalSupport
 
-Copy this file to `.env` and fill in the necessary environment variables that then running `ruby scratch.rb` will then generate for you a file called `graphFile2.json` which you can then display via running:
+Copy this file to `.env` and fill in the necessary environment variables that then running `bundle exec rake` will then generate for you a file called `graphFile2.json` which you can then display via running:
 
 ```
 ruby -run -e httpd . -p 9090

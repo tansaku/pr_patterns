@@ -50,6 +50,6 @@ build-iPhoneSimulator/
 .rvmrc
 
 # project specific
-graphFile2.json
+graphFile*.json
 pr_reviews_closed*
 .env
