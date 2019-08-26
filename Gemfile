@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'rspec'
-gem 'octokit'
 gem 'dotenv'
+gem 'octokit'
+gem 'rspec'
+gem 'rubocop'
